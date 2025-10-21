@@ -1,0 +1,116 @@
+/* ===============================
+   Complete SCSS Reset / Normalize
+   =============================== */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 elements display */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* Body */
+body {
+  line-height: 1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+/* Lists */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Blockquotes & Quotes */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Images & media */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Forms */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  background: none;
+  color: inherit;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* Remove tap highlight on mobile */
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hidden attribute */
+[hidden] {
+  display: none !important;
+}
