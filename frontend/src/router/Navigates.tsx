@@ -1,18 +1,18 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from '../components/Navbar';
-import Header from '../components/Header/Header';
+import Navbar from "../components/Navbar";
+import Header from "../components/Header/Header";
 
-const Home = lazy(() => import('./../pages/Home'));
+const HomePage = lazy(() => import("../pages/HomePage"));
 
 const Navigates: React.FC = () => {
   return (
     <Router>
       <Header />
-      <Navbar /> {/* Navbar всегда отображается */}
+      <Navbar />
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomePage />} />
         </Routes>
       </Suspense>
     </Router>
